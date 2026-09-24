@@ -1100,7 +1100,7 @@ window.addEventListener('load',async()=>{
   /* the sound gate ALWAYS asks on open — saved choice only sets the toggle, never skips the ask */
   pumpChatter();pumpChatter();setInterval(pumpChatter,9000);
   if(typeof Image!=='undefined')STARS.forEach(s=>{const im=new Image();im.src=s.src;});
-  try{musicFileTry(function(a){if(a){musicMode='file';musicEl=a;if(musicOn)musicStart();}});}catch(e){}
+  try{musicFileTry(function(a){if(a){musicStop();musicMode='file';musicEl=a;if(musicOn)musicStart();}});}catch(e){}
   showStar(0);starTimer=setInterval(()=>{if(!document.hidden)nextStar();},5000);
   await pollFeed();feedTimer=setInterval(pollFeed,15000);
 });
