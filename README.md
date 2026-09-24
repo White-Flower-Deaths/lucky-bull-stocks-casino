@@ -1,6 +1,6 @@
 # 🎰 Lucky Bull Casino
 
-### A stock-market-powered virtual casino for players who like their market data with a little more drama.
+### A stock-market-powered virtual casino for players who like their market data with a little more drama. Its interface is gambling based but you actually stacking on real time stocks 
 
 **Lucky Bull Casino** is a self-contained browser game built around a hidden market move. Choose a side, place demo dollars on a table, and let a live quote—or a transparent fallback simulation—decide whether the pit pays out.
 
@@ -30,6 +30,7 @@ This is a **virtual sandbox only**. It does not accept deposits, process withdra
 | 🪙 Coin Flip | **Bull / Heads** or **Bear / Tails** | 20× | The market move determines which side lands. |
 | 🃏 High Card | **Ace** or **Joker** | 50× / 30× | A matching house card creates the winning reveal. |
 | 🎲 Dice Roll | **High** or **Low** | 40× | The displayed dice land on your side; a six is a push. |
+| 😶‍🌫️Characters board | **SEXY** or **INTRESTING** | 40× | The side display will pop up some unique and fan favorite characters or some random beauty to encourage you for the love of the game|
 
 Each round offers a buy-to-sell window of **15 seconds, 30 seconds, 1 minute, 3 minutes, or 5 minutes**. A round can also be closed early with the cash-out control.
 
@@ -160,10 +161,26 @@ The game is intentionally easy to modify:
 
 If you add or replace artwork, music, or other third-party assets, verify that your license permits redistribution in a public repository.
 
+Some example images are :
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 000624" src="https://github.com/user-attachments/assets/cb8b88b6-abfd-4457-9a2d-2dbc81a8b7d0" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 000723" src="https://github.com/user-attachments/assets/10d7f4a5-c4fb-4a9f-9e6f-ed80d707b2e0" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 000843" src="https://github.com/user-attachments/assets/47b82b7d-8c18-43d5-94df-b784d0b3436b" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 000909" src="https://github.com/user-attachments/assets/7da9afb2-000c-41d2-8dfb-4315a0bb9055" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 000947" src="https://github.com/user-attachments/assets/2923a733-4757-4530-b371-72fb2ec8bad2" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-25 001016" src="https://github.com/user-attachments/assets/01b3416e-fb46-4c98-be76-5f50b3359062" />
+
+
+
+
 ## ⚠️ Responsible-use notice
 
-Lucky Bull Casino is an entertainment and programming project using fictional balances. It is **not** a financial product, trading tool, investment recommendation, gambling service, or source of financial advice. Market data may be delayed, unavailable, incomplete, or simulated. Never use the game's results to make real-world financial decisions.
+Lucky Bull Casino is an entertainment and programming project using fictional balances. It is **not** a financial product, trading tool, investment recommendation, gambling service, or source of financial advice. Market data may be delayed, unavailable, incomplete, or simulated. Never use the game's results to make real-world financial decisions.(Until and Unless you are really GAMBLING)
 
 ## 📄 License
 
-No open-source license is currently declared for this repository. Unless a license is added, default copyright rules apply: ask the project owner before redistributing or reusing the code or bundled assets.
+Only the copyright free assets are used.
