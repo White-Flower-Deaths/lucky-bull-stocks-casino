@@ -4,7 +4,7 @@
 
 **Lucky Bull Casino** is a self-contained browser game built around a hidden market move. Choose a side, place demo dollars on a table, and let a live quote—or a transparent fallback simulation—decide whether the pit pays out.
 
-> **Play now:** [white-flower-deaths.github.io/lucky-bull-casino/casino.html](https://white-flower-deaths.github.io/lucky-bull-casino/casino.html)
+> **Play now:** [white-flower-deaths.github.io/lucky-bull-stocks-casino/casino.html](https://white-flower-deaths.github.io/lucky-bull-stocks-casino/casino.html)
 
 This is a **virtual sandbox only**. It does not accept deposits, process withdrawals, or place trades. No real money is involved.
 
@@ -117,7 +117,7 @@ This repository is already configured as a static site. GitHub Pages serves the 
 The playable page is:
 
 ```text
-https://white-flower-deaths.github.io/lucky-bull-casino/casino.html
+https://white-flower-deaths.github.io/lucky-bull-stocks-casino/casino.html
 ```
 
 Because the app entry point is `casino.html`, the `/casino.html` suffix is required.
