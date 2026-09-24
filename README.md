@@ -175,7 +175,7 @@ Some example images are :
 <img width="1920" height="1080" alt="Screenshot 2026-09-25 001016" src="https://github.com/user-attachments/assets/01b3416e-fb46-4c98-be76-5f50b3359062" />
 
 
-### 🗣️  Don't gamble but invest, as either way one is a play of smarts in fool's place and the other one is play of fools in smart's place.✅
+### 🗣️  Don't gamble but invest, as either way one is the play of smarts in fool's place and the other one is the play of fools in smart's place.✅
 
 
 
