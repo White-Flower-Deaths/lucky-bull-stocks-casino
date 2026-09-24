@@ -30,7 +30,7 @@ This is a **virtual sandbox only**. It does not accept deposits, process withdra
 | 🪙 Coin Flip | **Bull / Heads** or **Bear / Tails** | 20× | The market move determines which side lands. |
 | 🃏 High Card | **Ace** or **Joker** | 50× / 30× | A matching house card creates the winning reveal. |
 | 🎲 Dice Roll | **High** or **Low** | 40× | The displayed dice land on your side; a six is a push. |
-| 😶‍🌫️Characters board | **SEXY** or **INTRESTING** | 40× | The side display will pop up some unique and fan favorite characters or some random beauty to encourage you for the love of the game|
+| 😶‍🌫️Characters board | **SEXY** or **INTRESTING** | 💓 | The side display will pop up some unique and fan favorite characters or some random beauty to encourage you for the love of the game|
 
 Each round offers a buy-to-sell window of **15 seconds, 30 seconds, 1 minute, 3 minutes, or 5 minutes**. A round can also be closed early with the cash-out control.
 
