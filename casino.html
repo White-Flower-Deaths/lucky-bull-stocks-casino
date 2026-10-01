@@ -512,15 +512,14 @@ function musicInit(){if(MU)return true;try{
   const nb=ctx.createBuffer(1,ctx.sampleRate,ctx.sampleRate),nd=nb.getChannelData(0);
   for(let i=0;i<nd.length;i++)nd[i]=Math.random()*2-1;
   MU={ctx,master,noise:nb,step:0,nextT:0,timer:null};return true;}catch(e){return false;}}
-let musicMode='synth',musicEl=null;
+let musicMode='synth',musicEl=null,musicReady=false;
 function musicFileTry(cb){try{
   if(typeof Audio==='undefined'){cb(null);return;}
   const a=new Audio();a.loop=true;a.volume=0.45;a.preload='auto';let done=false;
-  const to=setTimeout(()=>{if(!done){done=true;try{a.removeAttribute('src');}catch(e){}cb(null);}},3500);
-  a.addEventListener('canplaythrough',()=>{if(!done){done=true;clearTimeout(to);cb(a);}});
-  a.addEventListener('error',()=>{if(!done){done=true;clearTimeout(to);cb(null);}});
+  a.addEventListener('canplay',()=>{if(!done){done=true;cb(a);}});
+  a.addEventListener('error',()=>{if(!done){done=true;cb(null);}});
   a.src='music.mp3';}catch(e){try{cb(null);}catch(_){}}}
-function musicStart(){if(!musicOn)return;
+function musicStart(){if(!musicOn||!musicReady)return;
   if(musicMode==='file'&&musicEl){try{const p=musicEl.play();if(p&&p.catch)p.catch(function(){});}catch(e){}markSoundLive();return;}
   if(!musicInit())return;const c=MU.ctx;try{if(c.state==='suspended')c.resume();}catch(e){}
   if(MU.timer)return;MU.nextT=c.currentTime+0.1;try{scheduleMusic();}catch(e){}MU.timer=setInterval(()=>{try{scheduleMusic();}catch(e){}},180);markSoundLive();}
@@ -1100,7 +1099,8 @@ window.addEventListener('load',async()=>{
   /* the sound gate ALWAYS asks on open — saved choice only sets the toggle, never skips the ask */
   pumpChatter();pumpChatter();setInterval(pumpChatter,9000);
   if(typeof Image!=='undefined')STARS.forEach(s=>{const im=new Image();im.src=s.src;});
-  try{musicFileTry(function(a){if(a){musicStop();musicMode='file';musicEl=a;if(musicOn)musicStart();}});}catch(e){}
+  try{musicFileTry(function(a){musicReady=true;if(a){musicStop();musicMode='file';musicEl=a;}else{musicMode='synth';}if(musicOn)musicStart();});}
+  catch(e){musicReady=true;musicMode='synth';if(musicOn)musicStart();}
   showStar(0);starTimer=setInterval(()=>{if(!document.hidden)nextStar();},5000);
   await pollFeed();feedTimer=setInterval(pollFeed,15000);
 });
